@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo "Variables globales:"
+echo "Variables global:"
 echo "USER: $USER"
 echo "HOME: $HOME"
 echo "PWD: $PWD"
@@ -9,8 +9,8 @@ echo "SHELL: $SHELL"
 echo -e "\nArgumentos del Shell:"
 echo "$@"
 
-echo -e "\nValor retornado por el último comando ejecutado:"
+echo -e "\nValor Ultimo comando:"
 echo "$?"
 
-echo -e "\nPID de la Shell actual:"
+echo -e "\nPID:"
 echo "$$"
