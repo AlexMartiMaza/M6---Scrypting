@@ -6,7 +6,7 @@ mostrar_uso() {
 }
 
 comando_disponible() {
-    command -v $1 >/dev/null 2>&1 || { echo >&2 "$1 no está instalado. Por favor, instálalo e inténtalo de nuevo."; exit 1; }
+    command -v $1 >/dev/null 2>&1 || { echo >&2 "$1 no está instalado. Instalelo."; exit 1; }
 }
 
 instalar_nmap() {
@@ -24,7 +24,7 @@ comprobar_servicios() {
     systemctl status nombre_del_servicio
 }
 
-# Función para comprobar el funcionamiento interno del servidor
+
 comprobar_interno() {
     echo "Comprobando funcionamiento interno del servidor $1..."
     smartctl -a /dev/sda
